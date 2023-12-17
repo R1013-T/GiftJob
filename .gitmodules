@@ -4,3 +4,6 @@
 [submodule "backend"]
 	path = backend
 	url = https://github.com/R1013-T/giftjob-backend
+[submodule "ai"]
+	path = ai
+	url = https://github.com/R1013-T/giftjob-ai
