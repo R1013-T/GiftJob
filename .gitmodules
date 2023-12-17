@@ -1,3 +1,6 @@
 [submodule "frontend"]
 	path = frontend
 	url = https://github.com/R1013-T/giftjob-frontend
+[submodule "backend"]
+	path = backend
+	url = https://github.com/R1013-T/giftjob-backend
