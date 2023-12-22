@@ -1,0 +1,55 @@
+services:
+  ai:
+    build:
+      context: ./ai
+      dockerfile: Dockerfile
+    ports:
+      - "8001:8001"
+    volumes:
+      - ./ai:/app
+    environment:
+      # - OPENAI_API_KEY=9f1d5356ea14495bae4d62c6a279621a
+      # - OPENAI_API_URL=https://giftjobentrysheet.openai.azure.com/
+      - AZURE_OPENAI_KEY=2b2a3b69d4774f48834c94d927573f93
+      - AZURE_OPENAI_ENDPOINT=https://giftjob-entrysheet.openai.azure.com/
+      - FRONTEND_URL=http://localhost:3000
+    command: bash -c "cd ./src && uvicorn main:app --reload --host 0.0.0.0 --port 8001"
+
+  backend:
+    build:
+      context: ./backend
+      dockerfile: Dockerfile
+    ports:
+      - "8080:8080"
+    environment:
+        - DB_URL=postgres://takahashi:GiftJobDB01@giftjob-db.postgres.database.azure.com:5432/postgres
+        - JWT_SECRET=Ltf1BuN6W416gwmiLvM9xHxlDInxGQq13UzhzJLE65I=
+        - FRONTEND_URL=https://test-nextauth-apollo.vercel.app
+
+  # frontend:
+  #   build:
+  #     context: ./frontend
+  #     dockerfile: Dockerfile
+  #   tty: true
+  #   volumes:
+  #     - ./frontend/src:/app
+  #   environment:
+  #     - WATCHPACK_POLLING=true
+  #   command: sh -c "npm run dev"
+  #   ports:
+  #     - "3000:3000"
+
+  # dev-postgres:
+  #   platform: linux/x86_64
+  #   image: postgres:13
+  #   ports:
+  #     - 5432:5432
+  #   environment:
+  #     POSTGRES_USER: postgres
+  #     POSTGRES_PASSWORD: postgres
+  #     POSTGRES_DB: postgres
+  #   restart: unless-stopped
+  #   networks:
+  #     - dev
+networks:
+  dev:
