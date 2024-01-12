@@ -39,4 +39,3 @@
 ![slide9](https://github.com/R1013-T/GiftJob/blob/main/slides/slide9.png?raw=true)
 ![slide10](https://github.com/R1013-T/GiftJob/blob/main/slides/slide10.png?raw=true)
 ![slide11](https://github.com/R1013-T/GiftJob/blob/main/slides/slide11.png?raw=true)
-![slide12](https://github.com/R1013-T/GiftJob/blob/main/slides/slide12.png?raw=true)
