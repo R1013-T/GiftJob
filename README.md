@@ -27,3 +27,16 @@
   - GraphQL
   - GitHub
   - Docker
+
+![slide1](https://github.com/R1013-T/GiftJob/blob/main/slides/slide1.png?raw=true)
+![slide2](https://github.com/R1013-T/GiftJob/blob/main/slides/slide2.png?raw=true)
+![slide3](https://github.com/R1013-T/GiftJob/blob/main/slides/slide3.png?raw=true)
+![slide4](https://github.com/R1013-T/GiftJob/blob/main/slides/slide4.png?raw=true)
+![slide5](https://github.com/R1013-T/GiftJob/blob/main/slides/slide5.png?raw=true)
+![slide6](https://github.com/R1013-T/GiftJob/blob/main/slides/slide6.png?raw=true)
+![slide7](https://github.com/R1013-T/GiftJob/blob/main/slides/slide7.png?raw=true)
+![slide8](https://github.com/R1013-T/GiftJob/blob/main/slides/slide8.png?raw=true)
+![slide9](https://github.com/R1013-T/GiftJob/blob/main/slides/slide9.png?raw=true)
+![slide10](https://github.com/R1013-T/GiftJob/blob/main/slides/slide10.png?raw=true)
+![slide11](https://github.com/R1013-T/GiftJob/blob/main/slides/slide11.png?raw=true)
+![slide12](https://github.com/R1013-T/GiftJob/blob/main/slides/slide12.png?raw=true)
